@@ -1,0 +1,71 @@
+.menu{
+    height: 90px;
+    background-color: rgb(49, 49, 49);
+    text-align:LEFT;
+    box-shadow: -5px 5px rgb(0, 0, 0);
+    border-radius: 12px;
+}
+
+.header{
+   position:relative;
+   color: white;
+   font-size: 35px;
+   text-shadow: -5px 5px black;
+   margin-top: 5px;
+   margin-left: 15px;
+   margin-bottom: 5px;
+   display: inline;
+   border-radius: 0px;
+   opacity: 0.5;
+   border-top :none;
+   transition: font-size 0.3s ease-out;
+   left: 65px;
+}
+
+.header:hover{
+    color:rgb(255, 255, 255);
+    font-size: 45px;
+    opacity:1;
+    border-top: 5px solid ;
+    background-color: rgb(73, 72, 72);
+}
+
+.dropbox{
+    width: 450px;
+    margin-top: 25px;
+    position:absolute;
+    background-color: rgb(49, 49, 49);
+    box-shadow: -5px 5px rgb(0, 0, 0);
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+
+}
+
+.header:hover .dropdown-content {
+    display: grid;
+    border: 2px solid black;
+    color: white;
+}
+
+a {
+    text-decoration: none; /* Убираем подчёркивание */
+    color:white;
+}
+.logo{
+    position: fixed; 
+    top: px; 
+    left: 22px; 
+}
+
+@font-face {
+    font-family: "GNF";
+    src: url("font/GNF.ttf");
+}
+
+body {
+    background-color: rgb(77, 77, 77);
+    font-family: "GNF", "Arial", sans-serif;
+}
