@@ -1,0 +1,13 @@
+.info {
+    background: grey;
+    position: relative;
+    text-align: center;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .info {
+        background: #e3f2fd;
+        font-size: 16px;
+
+    }
+}
