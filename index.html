@@ -1,14 +1,200 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class="info">
-                <h1>Kvantexis</h1>
-                <h2>Обслуживание пк на лучшем уровне</h2>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный сайт</title>
+    <style>
+        /* Базовые стили для всех устройств */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        /* Стили для мобильных устройств (до 600px) */
+        @media (max-width: 600px) {
+            body {
+                background-color: #ffebee;
+                font-size: 14px;
+            }
+            
+            header {
+                background-color: #f44336;
+                border-bottom: 3px solid #b71c1c;
+            }
+            
+            .content {
+                display: block;
+            }
+            
+            .box {
+                background-color: #fff;
+                margin: 10px 0;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            
+            .special-message::after {
+                content: " (Мобильная версия)";
+                color: #f44336;
+                font-weight: bold;
+            }
+        }
+        
+        /* Стили для планшетов (601px - 900px) */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: #e3f2fd;
+                font-size: 16px;
+            }
+            
+            header {
+                background-color: #2196F3;
+                border-bottom: 3px solid #0d47a1;
+            }
+            
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+            
+            .box {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            }
+            
+            .special-message::after {
+                content: " (Версия для планшета)";
+                color: #2196F3;
+                font-weight: bold;
+            }
+        }
+        
+        /* Стили для десктопов (901px и больше) */
+        @media (min-width: 901px) {
+            body {
+                background-color: #fff8e1;
+                font-size: 18px;
+            }
+            
+            header {
+                background-color: #FFC107;
+                color: #333;
+                border-bottom: 3px solid #ff8f00;
+            }
+            
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+            }
+            
+            .box {
+                background-color: #fff;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s;
+            }
+            
+            .box:hover {
+                transform: scale(1.03);
+            }
+            
+            .special-message::after {
+                content: " (Десктопная версия)";
+                color: #FF9800;
+                font-weight: bold;
+            }
+        }
+        
+        /* Дополнительные стили для очень широких экранов */
+        @media (min-width: 1200px) {
+            .container {
+                width: 70%;
+                max-width: 1200px;
+            }
+            
+            .special-message::after {
+                content: " (Версия для широких экранов)";
+            }
+        }
+        
+        /* Стили для портретной ориентации */
+        @media (orientation: portrait) {
+            .orientation-message {
+                display: block;
+                color: #9C27B0;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+        }
+        
+        /* Стили для альбомной ориентации */
+        @media (orientation: landscape) {
+            .orientation-message {
+                display: block;
+                color: #3F51B5;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Адаптивный сайт</h1>
+        <p class="special-message">Текущая версия:</p>
+        <p class="orientation-message"></p>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <div class="box">
+                <h2>Блок 1</h2>
+                <p>Этот блок меняет свой внешний вид в зависимости от устройства.</p>
             </div>
-        </header>
-    </body>
+            <div class="box">
+                <h2>Блок 2</h2>
+                <p>Попробуйте изменить размер окна браузера или открыть сайт на разных устройствах.</p>
+            </div>
+            <div class="box">
+                <h2>Блок 3</h2>
+                <p>Сайт автоматически адаптируется под размер экрана.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Можно также добавлять адаптивность через JavaScript
+        function updateOrientationMessage() {
+            const orientation = window.innerWidth > window.innerHeight ? "альбомная" : "портретная";
+            document.querySelector('.orientation-message').textContent = `Ориентация: ${orientation}`;
+        }
+        
+        // Вызываем при загрузке и при изменении размера окна
+        window.addEventListener('load', updateOrientationMessage);
+        window.addEventListener('resize', updateOrientationMessage);
+    </script>
+</body>
 </html>
