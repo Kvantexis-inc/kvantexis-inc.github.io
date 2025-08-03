@@ -8,6 +8,7 @@
         body {
             background-color: bisque;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
         header {
             display:grid;
@@ -16,21 +17,31 @@
             border-bottom: 5px solid blanchedalmond ;
         }
         header h1 + p{
-            margin-top: 0;
+            margin-top: -25px;
+            font-style: italic;
+            font-weight: bold;
         }
         .logo {
-            position: absolute;
+            position: fixed;
             text-align: left;
-            padding: 5px;
-            border-radius: 15px;
-            width: 110px;
+            padding: 15px;
+            border-radius: 20px;
+            width: 65px;
+        }
+        
+        .contacts{
+            display:flex;
+            justify-self: right;
+            margin-top: -85px;
+            list-style-type:;
         }
         @media (max-width: 600px){
             header {
-                font-size: 12px;
+                font-size: 20px;
+                text-align: center;
             }
             .logo {
-                width: 75px;
+                width: 45px;
                 padding: 10px;
             }
         }
@@ -40,8 +51,18 @@
 <body>
     <header>
         <h1>Kvantexis</h1>
-        <p margin-top: 0px >Обслуживание пк на высоте</p>
+        <p>Обслуживание пк на высоте</p>
         <img class="logo" src="logo.jpg">
+        <div class="contacts">
+            <ul>
+                <li>
+                    ddd
+                </li>
+                <li>
+                    ddd
+                </li>
+            </ul>
+        </div>
     </header>
 </body>
 </html>
