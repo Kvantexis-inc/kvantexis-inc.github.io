@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kvantexis | Обслуживание пк</title>
     <style>
+        ul{
+            list-style-type: none;
+        }
         body {
             background-color: bisque;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+            margin: 0;
+            padding: 0
         }
         header {
             display:grid;
             background-color: beige;
             text-align: center;
             border-bottom: 5px solid blanchedalmond ;
+            align-items: center;
+            
         }
         header h1 + p{
             margin-top: -25px;
@@ -22,27 +28,27 @@
             font-weight: bold;
         }
         .logo {
-            position: fixed;
+            position: absolute;
             text-align: left;
             padding: 15px;
             border-radius: 20px;
             width: 65px;
         }
-        
+
         .contacts{
             display:flex;
             justify-self: right;
             margin-top: -85px;
-            list-style-type:;
+            
         }
-        @media (max-width: 600px){
+        @media (max-width: 600px) {
             header {
-                font-size: 15px;
+                font-size: 20px;
                 text-align: center;
+                align-items: center;
             }
             .logo {
-                width: 45px;
-                padding: 10px;
+                width: 65px;
             }
         }
         
