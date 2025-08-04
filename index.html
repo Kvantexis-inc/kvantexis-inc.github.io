@@ -9,85 +9,163 @@
     <title>Kvantexis | Обслуживание пк</title>
     <style>
         ul{
+            display: ;
             list-style-type: none;
         }
         a{
             text-decoration: none;
+            color: black;
         }     
 
         body {
-            background-color: 	#000000;
+            background-color: #ffffff;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 0;
-            padding: 0
+            padding: 0;
         }
         header {
-            display:grid;
-            background-color: 	#eeeeee;
+            position:fixed;
+     
+            width: 100%; 
+            z-index: 1000;
+            display: grid;
             text-align: center;
-            border-bottom: 5px solid 	#b6b6b6;
-            align-items: center;
+            background-color: gainsboro;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+            padding: 1px;
             
         }
-        header h1 + p{
-            margin-top: -25px;
+
+        header h1 {
+            margin-top:-20px;
+        }
+        header h1 + nav {
+            margin-bottom: 0;
+            margin-top: -20px;
             font-style: italic;
             font-weight: bold;
         }
+
         .logo {
             position: absolute;
-            text-align: left;
             padding: 5px;
             border-radius: 10px;
-            width: 65px;
+            width: 55px;
+        }
+
+        .hero{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 150px 0 100px;
+            color: #eeeeee;
+
+        }
+        .hero h1{
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-top: 0;
+            font-style: italic;
+        }
+
+        .services{
+            font-size: 24px;
+            text-align: center;
+            padding: 50px;
+            text-shadow: gainsboro 0px 4px;
+            background-color: white;
+    
+        }
+
+        .service-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+
+        }
+        .service-box{
+            padding: 30px;
+            background-color: #eeeeee;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
         }
 
         .contacts{
-            position: relative;
-            justify-self: right;
-            margin-top: -85px;
-            align-items:center;
-            left: -15px;
+            display:grid;
+            background-color: rgb(243, 243, 243);
+            font-size: 24px;
+            text-align: center;
+            padding: 50px;
+            text-shadow: gainsboro 0px 4px;
         }
-        #ui_line li {
-            display: inline;
-        }
-        @media (max-width: 600px) {
-            header {
-                font-size: 15px;
-                text-align: center;
-                align-items: center;
-            }
-            .logo {
-                width: 65px;
-            }
 
-            #ui_line li {
-                display: grid;
-            }
-            
+        .contacts a{
+            display: ;
+            margin-left: 2px;
         }
-        
     </style>
 </head>
 <body>
     <header>
+        <img class="logo" src="logo.jpg">ㅤ
         <h1>Kvantexis</h1>
-        <p>Обслуживание пк на высоте</p>
-        <img class="logo" src="logo.jpg">
-        <div class="contacts">
-            <ul id="ui_line">
-                <li>
-                    <a href="https://wa.me/79609383781"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/whatsapp--v1.png" alt="whatsapp--v1"/></a>
-                </li>
-                <li>
-                    <a href="https://t.me/romashka1w1"><img width="24" height="24" src="https://img.icons8.com/material/24/telegram-app.png" alt="telegram-app"/></a>
-                </li>
-                <li>
-                    <a href="mailto:kvantexis@inbox.ru&subject=вопрос"><img width="24" height="24" src="https://img.icons8.com/ios/24/mail.png" alt="mail"/></a>
-                </li>
-            </ul>
-        </div>
+        <nav class="menu"> 
+            <a href="#contacts">Контакты</a> |
+            <a href="#services">Услуги</a>
+        </nav>
     </header>
+
+    <section class="hero">
+        <div>
+            <h1>Обслуживание ПК</h1>
+            <p>Быстро. Качествено. Удобно</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="services">
+            <h1>Наши услуги</h1>
+        </div>
+        <div class="service-grid">        
+            <div class="service-box">
+                <h3>Установка ПО</h3>
+                <p>ОС, драйверы, офисные программы</p>
+            </div>
+            <div class="service-box">
+                <h3>Защита от вирусов</h3>
+                <p>Очистка системы от вредоносных программ</p>
+            </div>
+            <div class="service-box">
+                <h3>Диагностика</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div>
+            <h1>Контакты</h1>
+        </div>
+            <div class="contacts">
+                <a href="tel:+79991112233">Позвонить нам</a>
+                <a href="https://wa.me/79609383781"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+                <a href="https://t.me/romashka1w1"><img width="24" height="24" src="https://img.icons8.com/material/24/telegram-app.png" alt="telegram-app"/></a>
+                <a href="mailto:kvantexis@inbox.ru&subject=вопрос"><img width="24" height="24" src="https://img.icons8.com/ios/24/mail.png" alt="mail"/></a>
+            </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>© 2024 Kvantexis. Все права защищены.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
