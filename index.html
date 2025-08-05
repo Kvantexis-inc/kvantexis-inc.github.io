@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,8 @@
     <link rel="icon" type="image/x-icon" href="https://kvantexis-inc.github.io/favicon.ico">  
     <title>Kvantexis | Обслуживание пк</title>
     <style>
+
+
         ul{
             list-style-type: none;
         }
@@ -26,15 +28,11 @@
         }
         header {
             position:fixed;
-     
             width: 100%; 
-            z-index: 1000;
             display: grid;
             text-align: center;
-            background-color: gainsboro;
+            background-color: rgba(220, 220, 220, 0.8);
             box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-            padding: 1px;
-            
         }
 
         header h1 {
@@ -59,9 +57,9 @@
             background-size: cover;
             background-position: center;
             text-align: center;
-            padding: 150px 0 100px;
+            padding: 250px 0 100px;
             color: #eeeeee;
-
+            height: 250px;
         }
         .hero h1{
             font-size: 48px;
@@ -80,7 +78,7 @@
             padding: 50px;
             text-shadow: gainsboro 0px 4px;
             background-color: white;
-    
+
         }
 
         .service-grid{
@@ -114,7 +112,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="container">
         <img class="logo" src="logo.jpg">ㅤ
         <h1>Kvantexis</h1>
         <nav class="menu"> 
@@ -123,14 +121,14 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero container">
         <div>
             <h1>Обслуживание ПК</h1>
             <p>Быстро. Качествено. Удобно</p>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="services container">
         <div class="services">
             <h1>Наши услуги</h1>
         </div>
@@ -150,7 +148,7 @@
         </div>
     </section>
 
-    <section id="contacts" class="contacts">
+    <section id="contacts" class="contacts container">
         <div>
             <h1>Контакты</h1>
         </div>
