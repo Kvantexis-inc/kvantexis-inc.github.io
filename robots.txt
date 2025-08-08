@@ -1,0 +1,3 @@
+User-agent: Yandex
+Host: https://kvantexis-inc.github.io
+Sitemap: http://https://kvantexis-inc.github.io/sitemap.xml
