@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <link rel="icon" type="image/jpeg" href="https://kvantexis-inc.github.io/favicon.jpeg">
     <link rel="stylesheet" href="style.css">
+
     <title>Kvantexis | Обслуживание пк</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
         <div class="services">
             <h1>Наши услуги</h1>
         </div>
-        <div class="service-grid">        
+        <div class="grid">        
             <div class="service-box">
                 <h3>Установка ПО</h3>
                 <p>ОС, драйверы, офисные программы</p>
@@ -62,25 +63,48 @@
         </div>
     </section>
 
-    <section id="contacts" class="contacts container">
+    <section id="contacts" class="contacts">
         <div>
             <h1>Контакты</h1>
-        </div>
-            <div class="contacts">
-                <div>
-                    <a href="tel:+79609383781"><img width="24" height="24" src="https://img.icons8.com/ios/50/phone--v1.png"/>Позвонить</a> 
-                </div>
-                <div>
-                    <a href="https://wa.me/79609383781"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/whatsapp--v1.png"/>Whatsapp</a> 
-                </div>
-                <div>
-                    <a href="https://t.me/romashka1w1"><img width="24" height="24" src="https://img.icons8.com/material/24/telegram-app.png"/>Telegram</a> 
-                </div>
-                <div>
-                    <a href="mailto:kvantexis@inbox.ru"><img width="24" height="24" src="https://img.icons8.com/ios/24/mail.png"/>Почта</a> 
-                </div>
+            <div>
+                <a href="tel:+79609383781"><img width="24" height="24" src="https://img.icons8.com/ios/50/phone--v1.png"/>Позвонить</a> 
             </div>
+            <div>
+                <a href="https://wa.me/79609383781"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/whatsapp--v1.png"/>Whatsapp</a> 
+            </div>
+            <div>
+                <a href="https://t.me/romashka1w1"><img width="24" height="24" src="https://img.icons8.com/material/24/telegram-app.png"/>Telegram</a> 
+            </div>
+            <div>
+                <a href="mailto:kvantexis@inbox.ru"><img width="24" height="24" src="https://img.icons8.com/ios/24/mail.png"/>Почта</a> 
+            </div>
+        </div> 
+
+        <hr class="separator"></hr>
+
+        <div class="contacts-box">
+            <form id="myForm">
+                <h3>Обратная связь</h3>
+                <div>
+                    <label for ="name">Имя:</label>
+                    <input class="contacts_form" name="name" type = "text" id="name" required>
+                </div>
+                <div>
+                    <label for ="phone">Телефон:</label>
+                    <input class="contacts_form"  name="phone" type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+                </div>
+                <div>
+                    <label for ="message">Описание проблемы:</label>
+                    <textarea class="contacts_form" style="resize: none;" name = "message" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+
+        </div>
+        <!-- <div id="result" class="result"></div> -->
     </section>
+
+
 
     <footer class="footer">
         <div>
@@ -88,6 +112,6 @@
             <p>icon by <u><a href="https://icons8.com/">icons8</a></u></p>
         </div>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

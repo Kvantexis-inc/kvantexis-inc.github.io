@@ -68,6 +68,15 @@ header h1 + nav {
     font-style: italic;
 }
 
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+
+}
+
 .services{
     font-size: 24px;
     text-align: center;
@@ -77,17 +86,9 @@ header h1 + nav {
 
 }
 
-.service-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-
-}
-
 .service-box{
-    padding: 30px;
+    padding: 15px 10px;
     background-color: #eeeeee;
-    padding: 10px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
@@ -97,20 +98,56 @@ header h1 + nav {
 .service-box:hover{
     transform: translateY(-20px);
 }
+
 .contacts{
-    display: grid;
+    display: flex;
+    justify-content:space-evenly;
     background-color: rgb(243, 243, 243);
     font-size: 24px;
-    text-align: center;
-    padding: 50px;
+    text-align: center;  
+    padding: 55px;
     text-shadow: gainsboro 0px 4px;
-    gap:10px;
-   
 }
 
+.separator{
+    height: auto;
+    margin: 0px;
+    width: 3px;
+    background-color: black;
+}
+
+.contacts-box{
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+
+}
+
+.logo_contact{
+    margin: 0;
+    width: 55px;
+    height: 55px;
+}
+
+.contacts_form{
+    display: block;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: larger;
+}
+
+
 .contacts a{
-    margin-bottom: 35px;
+
     font-size: 30px;
+}
+
+
+.result {
+    font-size: 33px;
 }
 
 .footer{
