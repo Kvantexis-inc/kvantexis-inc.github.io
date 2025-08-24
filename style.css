@@ -104,19 +104,17 @@ header h1 + nav {
     background-color: rgb(243, 243, 243);
     font-size: 24px;
     text-align: center;
-    padding: 55px;
+    padding: 25px;
     text-shadow: gainsboro 0px 4px;
+
 }
 
 .contacts-box{
-
-    /* text-align: left; */
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
     padding: 15px;
-    /* width: 380px; */
-
+    margin: 25px;
 }
 
 .contacts_form{
@@ -124,11 +122,11 @@ header h1 + nav {
     border-radius: 15px;
     border: 1px solid #ddd;
     font-size: larger;
+    width: 260px;
+
 }
 
-
 .contacts a{
-
     font-size: 30px;
 }
 
