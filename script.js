@@ -10,7 +10,6 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         <h3>✅ Данные получены!</h3>
         <p><strong>Имя:</strong> ${name}</p>
         <p><strong>Телефон:</strong> ${phone}</p>
-        <p><em>В реальном проекте данные отправлялись бы на сервер</em>
     `;
             
             // Очищаем форму
