@@ -4,6 +4,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const description = document.getElementById('message').value;
+    const notification = document.getElementById('result')
 
     // Отправляем на Formspree
     fetch("https://formspree.io/f/xyzdgnnd", {
@@ -20,13 +21,22 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('result').innerHTML = `
-            <h3>✅ Данные отправлены!</h3>
-            <p>Мы свяжемся с вами в ближайшее время</p>
-        `;
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 100);
+
+        setTimeout(() => {
+            hidenotification(notification);
+        }, 4000);
         document.getElementById('myForm').reset();
     })
     .catch(error => {
         console.error('Ошибка:', error);
     });
+
+    function hidenotification(notification) {
+        notification.classList.add('hide');
+
+    }
 });
+
