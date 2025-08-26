@@ -106,6 +106,7 @@ header h1 + nav {
     text-align: center;
     padding: 25px;
     text-shadow: gainsboro 0px 4px;
+    z-index: 1000;
 
 }
 
