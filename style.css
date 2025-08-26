@@ -155,7 +155,7 @@ button:hover{
     border-radius: 5px;
     transform: translateY(100%);
     transition: all 0.5s ease;
-    opacity: 0;
+    opacity: 1;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -176,12 +176,11 @@ button:hover{
 
 @media (max-width: 600px) {
     .contacts_form{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .result{
         width: auto;
-        bottom: 200px;
     }
 
 }
