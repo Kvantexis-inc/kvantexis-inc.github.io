@@ -1,7 +1,4 @@
-.container{
-    text-align: center;
-    
-}
+
 ul{
     list-style-type: none;
     }
@@ -53,6 +50,7 @@ header h1 + nav {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
+    text-align: center;
     padding: 250px 0 100px;
     color: #eeeeee;
     height: 250px;
@@ -81,7 +79,8 @@ header h1 + nav {
 
 .services{
     font-size: 24px;
-    padding: 25px;
+    text-align: center;
+    padding: 50px;
     text-shadow: gainsboro 0px 4px;
     background-color: white;
 
@@ -90,6 +89,7 @@ header h1 + nav {
 .service-box{
     padding: 15px 10px;
     background-color: #eeeeee;
+    text-align: center;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
@@ -103,6 +103,7 @@ header h1 + nav {
 
     background-color: rgb(243, 243, 243);
     font-size: 24px;
+    text-align: center;
     padding: 25px;
     text-shadow: gainsboro 0px 4px;
 
@@ -128,6 +129,7 @@ header h1 + nav {
 .contacts a{
     font-size: 30px;
 }
+
 
 
 .result {
