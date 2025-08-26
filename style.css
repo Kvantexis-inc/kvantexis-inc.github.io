@@ -143,7 +143,6 @@ button:hover{
 
 .result {
     margin: auto;
-    z-index: 1000;
     background:#ffffff;
     font-size: 25px;
     position: fixed;
@@ -162,11 +161,13 @@ button:hover{
 .result.show {
     opacity: 1;
     transform: translateX(0);
+    z-index: 1000;
 }
 
 .result.hide {
     transition: opacity 0.5s ease;
     opacity: 0;
+    z-index: 1;
 }
 
 .result.hide::after{
