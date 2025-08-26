@@ -123,6 +123,7 @@ header h1 + nav {
     border-radius: 15px;
     border: 1px solid #ddd;
     font-size: larger;
+    z-index: 1000;
 }
 
 
