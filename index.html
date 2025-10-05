@@ -10,7 +10,6 @@
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <link rel="icon" type="image/jpeg" href="https://kvantexis-inc.github.io/favicon.jpeg">
     <link rel="stylesheet" href="style.css">
-
     <title>Kvantexis | Обслуживание пк</title>
 </head>
 <body>
@@ -30,11 +29,24 @@
         </div>
     </section>
 
+
     <section id="services" class="services container">
+        <input type="radio" name="tabs" id="tab1" class="tab-input" checked>
+        <input type="radio" name="tabs" id="tab2" class="tab-input">
+
         <div class="services">
-            <h1>Наши услуги</h1>
+            <h1>Мои услуги</h1>
         </div>
-        <div class="grid">        
+        
+        <div class="Tabs_button">
+            <label for="tab1" class="tab-button">Обслуживание ПК</label>
+            <label for="tab2" class="tab-button">Доп. Услуги</label>
+        </div>
+
+
+<!-- Первая вкладка -->
+    <div class="tabs">
+        <div id="tab1" class="grid tab">        
             <div class="service-box">
                 <h3>Установка ПО</h3>
                 <p>ОС, драйверы, офисные программы</p>
@@ -61,6 +73,25 @@
                 <p>от 400₽</p>
             </div>
         </div>
+    </div>
+        
+
+<!-- Вторая вкладка -->
+    <div class="tabs">
+        <div id="tab2" class="grid tab">        
+            <div class="service-box">
+                <h3>Ремонт</h3>
+                <p>Остался старый ноутбук? Вдохну новую жизнь </p>
+                <p>от 700₽</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     </section>
 
     <section id="contacts" class="contacts container">

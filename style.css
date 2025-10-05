@@ -51,13 +51,14 @@ header h1 + nav {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 250px 0 100px;
+    align-items: center;
+    padding: 100px 0 100px;
     color: #eeeeee;
     height: 250px;
 }
 
 .hero h1{
-    font-size: 48px;
+    font-size: 58px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -184,6 +185,49 @@ button:hover{
     }
 
 }
+
+.tab{
+    display: none;
+}
+
+.Tabs_button{
+    display: flex;
+    justify-content: space-around;
+    padding: 1px 55px 65px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #333;
+        border-radius: 10px;
+}
+
+.tab-input{
+    display: none;
+}
+
+/* Показываем выбранную вкладку */
+#tab1:checked ~ .tabs #tab1,
+#tab2:checked ~ .tabs #tab2 {
+    display: grid;
+}
+        
+
+
+/* Выделяем активную кнопку */
+#tab1:checked ~ .Tabs_button [for="tab1"],
+#tab2:checked ~ .Tabs_button [for="tab2"] {
+    background: #000000;
+    color: white;
+    border-color: #0056b3;
+    text-shadow: rgb(0, 0, 0) 0px 4px;
+}
+
+
+
 
 .footer{
     text-align: center;
