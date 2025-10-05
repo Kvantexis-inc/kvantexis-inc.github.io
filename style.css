@@ -196,6 +196,7 @@ button:hover{
 }
 
 .Tabs_button{
+    display: block;
     align-items: center;
     padding: 1px 55px 65px;
 }
