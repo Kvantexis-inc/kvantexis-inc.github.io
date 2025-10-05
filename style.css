@@ -186,8 +186,10 @@ button:hover{
     .result{
         width: auto;
     }
+    
 
 }
+
 
 .tab{
     display: none;
@@ -195,7 +197,7 @@ button:hover{
 
 .Tabs_button{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 1px 55px 65px;
 }
 
@@ -205,7 +207,7 @@ button:hover{
     border: 1px solid #ccc;
     cursor: pointer;
     color: #333;
-        border-radius: 10px;
+    border-radius: 10px;
 }
 
 .tab-input{
