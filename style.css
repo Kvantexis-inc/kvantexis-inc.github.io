@@ -107,6 +107,7 @@ header h1 + nav {
     text-align: center;
     padding: 25px;
     text-shadow: gainsboro 0px 4px;
+    z-index: 1000;
 
 }
 
@@ -124,6 +125,7 @@ header h1 + nav {
     border-radius: 15px;
     border: 1px solid #ddd;
     font-size: larger;
+    z-index: 1000;
 }
 
 
@@ -144,7 +146,6 @@ button:hover{
 
 .result {
     margin: auto;
-    z-index: 1000;
     background:#ffffff;
     font-size: 25px;
     position: fixed;
@@ -163,11 +164,13 @@ button:hover{
 .result.show {
     opacity: 1;
     transform: translateX(0);
+    z-index: 1000;
 }
 
 .result.hide {
     transition: opacity 0.5s ease;
     opacity: 0;
+    z-index: 1;
 }
 
 .result.hide::after{
