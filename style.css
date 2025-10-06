@@ -23,6 +23,7 @@ header {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     padding:2px;
     z-index: 1000;
+    backdrop-filter: blur(5px);
 }
 
 header h1 {
@@ -84,6 +85,7 @@ header h1 + nav {
     padding: 50px;
     text-shadow: gainsboro 0px 4px;
     background-color: white;
+    
 
 }
 
@@ -149,32 +151,28 @@ button:hover{
     background:#ffffff;
     font-size: 25px;
     position: fixed;
-    top: 10px;
-    right: 10px;
-    left: 10px;
-    padding: 14px;
+    top: -65px;
+    left: 35%;
+    padding: 12px;
     width: 600px;
     border-radius: 5px;
     transform: translateY(100%);
     transition: all 0.5s ease;
-    opacity: 0;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    display: none;
 }
 
 .result.show {
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 1000;
+    display: block;
 }
 
 .result.hide {
-    transition: opacity 0.5s ease;
-    opacity: 0;
-    z-index: 1;
+    transition: display 0.5s ease;
+    display: none;
 }
 
 .result.hide::after{
-    opacity: 0;
+    display: none;
 }
 
 
