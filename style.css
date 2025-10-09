@@ -12,6 +12,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 header {
@@ -110,7 +113,6 @@ header h1 + nav {
     padding: 25px;
     text-shadow: gainsboro 0px 4px;
     z-index: 1000;
-
 }
 
 .contacts-box{
@@ -135,15 +137,24 @@ header h1 + nav {
     font-size: 30px;
 }
 
-button{
+.separator{
+    width: 150px;
+    height: 100%;
+}
+
+.button{
     font-size: 25px;
     background-color: #ddd;
     border-radius: 5px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-button:hover{
+.button:hover{
     background-color: #aaaaaa;
+}
+
+.button.hide{
+    display: none;
 }
 
 .result {
@@ -152,23 +163,24 @@ button:hover{
     font-size: 25px;
     position: fixed;
     top: -65px;
-    left: 35%;
+    right: -1000px;
     padding: 12px;
     width: 600px;
     border-radius: 5px;
     transform: translateY(100%);
     transition: all 0.5s ease;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    display: none;
+    display: block;
 }
 
 .result.show {
     display: block;
+    right: 0%;
 }
 
 .result.hide {
-    transition: display 0.5s ease;
-    display: none;
+    transition: right 0.5s ease;
+    right:-1000px;
 }
 
 .result.hide::after{
@@ -184,7 +196,6 @@ button:hover{
     .result{
         width: auto;
     }
-    
 
 }
 
@@ -194,7 +205,11 @@ button:hover{
 }
 
 .Tabs_button{
+    display: grid;
+    position: relative;
     padding: 1px 55px 65px;
+    justify-content: center;
+
 }
 
 .tab-button {
@@ -217,7 +232,6 @@ button:hover{
 }
         
 
-
 /* Выделяем активную кнопку */
 #tab1:checked ~ .Tabs_button [for="tab1"],
 #tab2:checked ~ .Tabs_button [for="tab2"] {
@@ -226,8 +240,6 @@ button:hover{
     border-color: #0056b3;
     text-shadow: rgb(0, 0, 0) 0px 4px;
 }
-
-
 
 
 .footer{

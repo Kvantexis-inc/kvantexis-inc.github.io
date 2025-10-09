@@ -5,6 +5,8 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const phone = document.getElementById('phone').value;
     const description = document.getElementById('message').value;
     const notification = document.getElementById('result')
+    const btn = document.getElementById('btn')
+
 
     // Отправляем на Formspree
     fetch("https://formspree.io/f/xyzdgnnd", {
@@ -19,6 +21,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             _subject: 'Новая заявка с сайта'
         })
     })
+    
     .then(response => response.json())
     .then(data => {
         setTimeout(() => {
@@ -29,6 +32,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             hidenotification(notification);
         }, 4000);
         document.getElementById('myForm').reset();
+
     })
     .catch(error => {
         console.error('Ошибка:', error);
@@ -36,7 +40,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
     function hidenotification(notification) {
         notification.classList.add('hide');
-
     }
+
 });
 

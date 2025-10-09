@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Kvantexis | Обслуживание пк</title>
 </head>
-<body>
+
     <header>
         <img class="logo" src="logo.jpg">ㅤ
         <h1>Kvantexis</h1>
@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-    <section class="hero container">
+    <section class="hero">
         <div>
             <h1>Обслуживание ПК</h1>
             <p>Быстро. Качествено. Удобно</p>
@@ -30,7 +30,7 @@
     </section>
 
 
-    <section id="services" class="services container">
+    <section id="services" class="services">
         <input type="radio" name="tabs" id="tab1" class="tab-input" checked>
         <input type="radio" name="tabs" id="tab2" class="tab-input">
 
@@ -39,7 +39,7 @@
         </div>
 
         <div class="Tabs_button grid">
-            <label for="tab1" class="tab-button">Обслуживание ПК</label>
+            <label for="tab1" class="tab-button">Настройка ПК</label>
             <label for="tab2" class="tab-button">Доп. Услуги</label>
         </div>
 
@@ -67,11 +67,6 @@
                     <p>Wi-Fi, локальные сети, интернет</p>
                     <p>от 400₽</p>
                 </div>
-                <div class="service-box">
-                    <h3>Обслуживание ПК</h3>
-                    <p>Чистка от пыли, замена термопасты</p>
-                    <p>от 400₽</p>
-                </div>
             </div>
         </div>
         
@@ -81,15 +76,25 @@
         <div id="tab2" class="grid tab">        
             <div class="service-box">
                 <h3>Ремонт</h3>
-                <p>Остался старый ноутбук? Вдохну новую жизнь </p>
+                <p>Восстановление работы устройств</p>
                 <p>от 700₽</p>
+            </div>
+            <div class="service-box">
+                <h3>Удаленная помощь</h3>
+                <p>Решение проблем компьютера и программ онлайн</p>
+                <p>от 500₽</p>
+            </div>
+            <div class="service-box">
+                <h3>Обслуживание ПК</h3>
+                <p>Чистка от пыли, замена термопасты</p>
+                <p>от 400₽</p>
             </div>
         </div>
     </div>
-
     </section>
 
-    <section id="contacts" class="contacts container">
+
+    <section id="contacts" class="contacts">
         <div>
             <h1>Контакты</h1>
             <div>
@@ -106,6 +111,15 @@
             </div>
         </div> 
 
+        <hr class="separator">
+
+        <div class="container">
+            <h3>Локация</h3>
+            <p>📍 Зона работы: Алтайский край C.Павловск, C.Шелаболиха + Удаленная помощь</p>
+        </div>
+
+
+
         <div class="contacts-box">
             <form id="myForm">
                 <h3>Обратная связь</h3>
@@ -115,19 +129,21 @@
                 </div>
                 <div>
                     <label for ="phone">Телефон:</label>
-                    <input class="contacts_form"  name="phone" type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+                    <input class="contacts_form" name="phone" type="tel" id="phone" placeholder="+7 (999) 123-45-67" pattern="[\+][0-9]{11}" title="Введите 11 цифр номера" required>
                 </div>
                 <div>
                     <label for ="message">Описание проблемы:</label>
                     <textarea class="contacts_form" style="resize: none;" name = "message" id="message" rows="4" required></textarea>
                 </div>
-                <button type="submit">Отправить</button>
+                <button id = "Btn" class="button"  type="submit">Отправить</button>
             </form>
         </div>
+
 <div id="result" class="result">
-<h3>✅ Данные отправлены!</h3>
-<p>Мы свяжемся с вами в ближайшее время</p>
+    <h3>✅ Данные отправлены!</h3>
+    <p>Мы свяжемся с вами в ближайшее время</p>
 </div>
+
     </section>
 
     <footer class="footer">
