@@ -17,7 +17,7 @@ Kvantexis — Обслуживание ПК
 
 **Контакты**
 - **Email**: Kvantexis@inbox.ru
-- **Сайт**: https://kvantexis-inc.github.io/
+- **Сайт**: https://kvantexis.ru
 
 ---
 
