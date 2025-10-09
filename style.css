@@ -32,9 +32,7 @@ header {
 header h1 {
     margin-top:-20px;
     text-shadow: rgb(130, 130, 130) 0px 3px;
-}
 
-header h1 + nav {
     margin-bottom: 0;
     margin-top: -20px;
     font-style: italic;
