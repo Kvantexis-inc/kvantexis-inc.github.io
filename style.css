@@ -56,14 +56,14 @@ header h1 + nav {
     background-position: center;
     text-align: center;
     align-items: center;
-    padding: 100px 0 100px;
+    padding: 350px 0 100px;
     color: #eeeeee;
     height: 250px;
 }
 
 .hero h1{
     font-size: 58px;
-    margin-top: 0;
+    margin-top: -55px;
     margin-bottom: 0;
 }
 
@@ -138,8 +138,14 @@ header h1 + nav {
 }
 
 .separator{
-    width: 150px;
-    height: 100%;
+    display:inline;
+    margin: 15px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
 }
 
 .button{
@@ -188,7 +194,7 @@ header h1 + nav {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .contacts_form{
         font-size: 15px;
     }
@@ -196,6 +202,21 @@ header h1 + nav {
     .result{
         width: auto;
     }
+
+    .container{
+        display: block;
+    }
+
+    .separator{
+        display:block;
+        margin: 15px;
+    }
+
+    .hero h1{
+        font-size: 38px;
+        margin-top: -55px;
+        margin-bottom: 0;
+}
 
 }
 
